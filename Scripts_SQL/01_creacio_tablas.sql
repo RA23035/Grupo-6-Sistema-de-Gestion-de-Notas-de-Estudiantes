@@ -24,8 +24,7 @@ CREATE TABLE docentes (
 );
 
 -- 4. Tabla estudiantes
--- Nota: En el Word había un error de tipeo que mezclaba codigo_carrera en la línea del ID. 
--- Al tener carrera_id como FK, no es necesario duplicar el código, el carnet es el identificador único.
+
 CREATE TABLE estudiantes (
     estudiante_id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
     carnet VARCHAR(15) UNIQUE NOT NULL,
